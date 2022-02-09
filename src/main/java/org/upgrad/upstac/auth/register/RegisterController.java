@@ -53,12 +53,14 @@ public class RegisterController {
 
     @RequestMapping(value = "/auth/doctor/register")
     public User saveDoctor(@RequestBody RegisterRequest registerRequest) {
-/*
+
+
+        /*
         this method should call addDoctor function from registerService
         if everything goes fine , it should return User object,
         else if there is an error
             the method should throw ResponseStatusException with HttpStatus.BAD_REQUEST
-*/
+        */
         try {
             return registerService.addDoctor(user);
         }catch (AppException e){
